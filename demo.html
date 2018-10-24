@@ -11,19 +11,19 @@
 <script>
 
 let myarray = [1,2,3,4,5,6,7,8,9];
-var limit;
-var i;
+
 function reverseA() {
 	let aLen = myarray.length-1;
-  limit = aLen / 2;
+  	let limit = aLen / 2;
 	for (i = 0; i < limit; i++) {
 		let a = myarray[i];
-    	myarray[i] = myarray[aLen-i];
-    	myarray[aLen-i] = a;
+    		myarray[i] = myarray[aLen-i];
+    		myarray[aLen-i] = a;
 	}
 }
 reverseA();
 
+document.getElementById("demo").innerHTML = myarray;
 </script>
 
 </body>
